@@ -1,0 +1,65 @@
+[tool.poetry]
+name = "zoo-management"
+version = "0.1.0"
+description = "Zoo Management App Testing"
+authors = ["GIta Asaria <yosephine.gah@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohappyeyeballs = "^2.4.3"
+aiohttp = "^3.10.9"
+aiosignal = "^1.3.1"
+annotated-types = "^0.7.0"
+anyio = "^4.6.0"
+attrs = "^24.2.0"
+blinker = "^1.8.2"
+certifi = "^2024.8.30"
+charset-normalizer = "^3.3.2"
+click = "^8.1.7"
+deprecation = "^2.1.0"
+flask = "^3.0.3"
+frozenlist = "^1.4.1"
+gotrue = "^2.9.2"
+h11 = "^0.14.0"
+h2 = "^4.1.0"
+hpack = "^4.0.0"
+httpcore = "^1.0.6"
+httpx = "^0.27.2"
+hyperframe = "^6.0.1"
+idna = "^3.10"
+itsdangerous = "^2.2.0"
+jinja2 = "^3.1.4"
+markupsafe = "^2.1.5"
+multidict = "^6.1.0"
+packaging = "^24.1"
+postgrest = "^0.17.1"
+pydantic = "^2.9.2"
+python-dateutil = "^2.9.0.post0"
+python-dotenv = "^1.0.1"
+realtime = "^2.0.5"
+requests = "^2.32.3"
+six = "^1.16.0"
+sniffio = "^1.3.1"
+storage3 = "^0.8.1"
+strenum = "^0.4.15"
+supabase = "^2.9.0"
+supafunc = "^0.6.1"
+typing-extensions = "^4.12.2"
+urllib3 = "^2.2.3"
+websockets = "^13.1"
+werkzeug = "^3.0.4"
+yarl = "^1.13.1"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.3"
+pytest-flask = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest-dotenv = "^0.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
