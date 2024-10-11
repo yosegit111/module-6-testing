@@ -11,7 +11,8 @@ def test_get_all_employees(client):
     """Test the /employees GET route."""
     response = client.get('/employees')
     assert response.status_code == 200
-    assert isinstance(response.json, list)
+    assert b"<h2>Employees</h2>" in response.data
+    assert b"<table>" in response.data
 
 def test_add_employee(client):
     """Test the /employees POST route."""

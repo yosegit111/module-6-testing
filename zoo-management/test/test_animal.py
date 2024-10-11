@@ -11,7 +11,11 @@ def test_get_all_animals(client):
     """Test the /animals GET route."""
     response = client.get('/animals')
     assert response.status_code == 200
-    assert isinstance(response.json, list)
+
+    assert b"Add New Animal" in response.data
+    assert b"Update</button>" in response.data
+    assert b"Delete</button>" in response.data
+
 
 def test_add_animal(client):
     """Test the /animals POST route."""
